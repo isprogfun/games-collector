@@ -1,4 +1,4 @@
-package com.isprogfun.todo;
+package com.isprogfun.collector;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

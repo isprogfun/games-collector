@@ -1,4 +1,4 @@
-package com.isprogfun.todo;
+package com.isprogfun.collector;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,13 +9,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TodoApplication {
+public class CollectorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TodoApplication.class, args);
+		SpringApplication.run(CollectorApplication.class, args);
 
 		// Create tables
-		try (Connection connection = DriverManager.getConnection("jdbc:postgresql://database:5432/todo-db", "admin", "secret")) {
+		try (Connection connection = DriverManager.getConnection("jdbc:postgresql://database:5432/collector-db", "admin", "secret")) {
 			Statement statement = connection.createStatement();
 
 			String usersTableSql = "CREATE TABLE IF NOT EXISTS users (" +

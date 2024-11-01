@@ -1,4 +1,4 @@
-# ToDo app
+# Collector app
 
 ## Instructions for running locally
 
