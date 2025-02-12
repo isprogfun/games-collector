@@ -33,3 +33,5 @@ build/
 .vscode/
 
 DOCS.md
+.env
+/db/
